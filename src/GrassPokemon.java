@@ -17,6 +17,12 @@ public class GrassPokemon extends PokemonSuper {
         System.out.println("You do a rain dance, gaining 50 xp");
     }
 
+    @Override
+    public void attack() {
+        System.out.println("Pokemon is attacking");
+        System.out.println("Your damage from this attack is doubled");
+    }
+
     public int getGrassPower() {
         return grassPower;
     }

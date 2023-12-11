@@ -18,6 +18,12 @@ public class FirePokemon extends PokemonSuper {
         System.out.println("You were hit with a Solar Beam");
     }
 
+    @Override
+    public void eating() {
+        super.eating();
+        System.out.println("You gain 1 level experience from this food.");
+    }
+
     public int getFireStrength() {
         return fireStrength;
     }

@@ -1,4 +1,4 @@
-public class PokemonSuper {
+abstract public class PokemonSuper {
 
     private String name;
     private int level;
@@ -20,6 +20,22 @@ public class PokemonSuper {
 
     public void eating(){
         System.out.println("Pokemon is eating, you gain health");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public int getXp() {

@@ -12,13 +12,17 @@ public class ElectricPokemon extends PokemonSuper {
         this.specialElectricity = specialElectricity;
     }
 
-
     public void electricShock(){
         System.out.println("You are attacked with an Electric Shock");
     }
 
     public void electroBall(){
         System.out.println("You've been hit with an Electro Ball!");
+    }
+
+    @Override
+    public void attack() {
+        System.out.println("Attack is canceled.");
     }
 
     public int getElectricity() {
